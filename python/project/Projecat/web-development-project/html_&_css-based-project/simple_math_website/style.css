@@ -1,0 +1,145 @@
+*{
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+body
+{
+
+}
+
+#container
+{
+  margin: 0px 200px;
+  border: 1px solid black ;
+  
+}
+
+#header
+{ 
+  margin-top: 20px;
+  height: 70px;
+  /* border: 1px solid black ; */
+}
+
+#header_left 
+{
+  float: left;
+  width: 60%;
+  font-size: 3em;
+  color: blueviolet;
+  height: 60px;
+}
+#header_right
+{
+  float: right;
+  width: 40%;
+  background-color: rgb(123, 199, 47);
+  height: 60px;
+}
+
+#header_right #left
+{ 
+  /* padding: 5px; */
+  border: 2px solid palevioletred;
+  background:white url(images/search.png) right center no-repeat;
+  margin: 18px;
+  width: 60%;
+  height: 2em;
+}
+
+#header_right #right
+{
+  background-color: blue;
+  color: azure;
+  /* height: 2em; */
+  padding: 5px;
+  border: 2px solid palevioletred;
+  margin: 18px
+  width 35%;
+  font-weight: bold;
+}
+
+
+.class{
+  clear: both;
+}
+
+#navbar
+{
+  margin-top: 20px;
+  height: 80px;
+  border: 1px solid blue;
+  background-color: #C8D03E;
+  padding: 34px;
+  font-size: 1.4em;
+  
+}
+
+#navbar a
+{
+  padding: 22px;
+  color: blue;
+  
+}
+
+#navbar a:hover
+{
+  font-size: 1.2em;
+  transform: linear 0.2s;
+}
+
+#first_section
+{
+  margin-top: 20px;
+  border: 2px solid black;
+  margin: 1px solid blue;
+  background-color: #a0e78c;
+  height: 200px;
+  padding: 35px 0px 10px 15px;
+}
+
+#first_section h1
+{
+  font-size: 2.6em;
+  color: #34b311;
+  margin-bottom: 20px;
+}
+
+#first_section p
+{
+  color: #34b311;
+  margin-top: 40px;
+}
+
+#second_section
+{
+  margin-top: 20PX;
+  border: 2PX SOLID BLUE;
+  height: 500px;
+
+}
+
+#second_section #left
+{
+  float: left;
+  width: 48%;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 500px;
+}
+
+#second_section h1
+{
+  font-size: 3em;
+  padding: 20px;
+}
+
+#second_section a
+{
+ padding: 2px 0px 12px 60px;
+}
+
+

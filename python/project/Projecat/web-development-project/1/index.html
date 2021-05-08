@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider page on phone</title>
+  <!-- adding style-sheet  -->
+  <link rel="stylesheet" href="index.css">
+   <!-- adding font-awesone link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <h1>How are you guy's</h1>
+  <div class="main">
+      <!-- Header section  -->
+      <div class="header">
+        <img src="image/menu.png" class="manu" alt="manu">
+        <p >Meet App</p>
+        <img src="image/bell.jpg" class="bell" alt="bell">
+      </div>
+      
+      <!-- contant section  -->
+      <div class="contant">
+        <h2>our team</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa animi reiciendis voluptate. Minus quia inventore itaque voluptatibus, repellendus molestias delectus corporis tempora facilis in quasi quam! Voluptate eligendi molestiae iste?</p>
+      </div>
+
+
+     <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(./images/nature-1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-3.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-4.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-5.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-6.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-7.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-8.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-9.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-10.jpg)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+      <!-- footer section  -->
+        <footer>
+          <img src="image/home.png" alt="">
+          <img src="image/search.png" alt="">
+          <img src="image/user.png" alt="">
+          <img src="image/undo.png" alt="">
+        </footer>
+
+        <!-- Swiper JS -->
+  <script src="../package/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+  </div>
+</body>
+</html>

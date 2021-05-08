@@ -1,0 +1,106 @@
+*{
+  margin=0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body
+{
+  background: linear-gradient(blue,red);
+}
+
+.main
+{
+  width: 350px;
+  height: 87vh;
+  position: relative;
+  background: white;
+  margin: 0 auto;
+}
+
+.header{
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 10px 20px rgba(0, 0, 0, 0.1) ;
+  background: #f9f9f9;
+  padding: 10px 0;
+  color: blue;
+  overflow: hidden;
+ 
+}
+
+.header img
+{
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+  
+}
+
+.header p
+{
+  color: #007aff;
+  text-align:center;
+  text-transform: uppercase;
+  
+}
+
+.manu
+{
+   left: 10px;
+   
+}
+
+
+.bell
+{
+  right: 10px;
+  
+}
+
+.contant
+{
+  text-align: left;
+  padding: 0 30px;
+}
+
+
+
+
+footer{
+  width: 100%;
+  position: absolute;
+  box-shadow: 0 0 10px 20px rgba(0, 0, 0, 0.1) ;
+  background: #f9f9f9;
+  padding: 17px 0px;
+  color: blue;
+  bottom: 0px;
+}
+footer img{
+  width: 22px;
+  cursor: pointer;
+  margin: 0 30px;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+
+}
