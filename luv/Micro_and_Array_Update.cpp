@@ -1,22 +1,32 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
 int main()
 {
-  int n;
-  cin>>n;
-  while(n--)
+  int t;
+  cin >> t;
+  while (t--)
   {
-    int a,b;
-    cin>>a>>b;
-    int c[a];
-    cin>>c[0];
-    int m=c[0];
-    for(int i=1;i<a;i++)
+    int n, k;
+    cin >> n >> k;
+    int a[n];
+    cin >> a[0];
+    int min = a[0];
+    for (int i = 1; i < n; ++i)
     {
-      cin>>c[i];
-      if(c[i]<m){m=c[i];}
+      cin >> a[i];
+      if (a[i] < min)
+      {
+        min = a[i];
+      }
     }
-    cout<<b-m<<endl;
+    if (min >= k)
+    {
+      cout << 0 << endl;
+    }
+    else
+    {
+      cout << k - min << endl;
+    }
   }
   return 0;
 }
