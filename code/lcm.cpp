@@ -1,18 +1,34 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-int main() {
-   int a, b, lcm;
-   cin>>a>>b;
-   if(a>b)
-   lcm = a;
-   else
-   lcm = b;
-   while(1) {
-      if( lcm%a==0 && lcm%b==0 ) {
-         cout<<"The LCM of "<<a<<" and "<<b<<" is "<<lcm;
-         break;
+
+long long int fact(long long int a){
+  long long fact=1;
+  for(long long int i=2;i<=a;++i){
+    fact*=i;
+  }
+  return fact;
+}
+
+long long int binomial(long long int i,long long int j){
+  return (fact(i)/(fact(j)*fact(i-j)));
+}
+
+int main()
+{
+  int t;
+  cin>>t;
+  while (t--)
+  {
+    long long int  n;
+    cin>>n;
+    for(long long int i=0;i<n;++i){
+      for(long long int j=0;j<=i;++j){
+        cout<<binomial(i,j)<<" ";
       }
-      lcm++;
-   }
-   return 0;
+      cout<<endl;
+    }
+  }
+  
+
+  return 0;
 }
