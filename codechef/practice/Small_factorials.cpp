@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-long long int fact(long long int a){
+unsigned long long int fact(unsigned long long int a){
   if(a==0 || a==1){return 1;}
   else
   {
@@ -16,7 +16,7 @@ int main()
   cin >> n;
   while (n--)
   {
-    long long int a;
+    unsigned long long int a;
     cin >> a;
     cout << fact(a) << endl;
   }

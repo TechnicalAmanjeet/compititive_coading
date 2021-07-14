@@ -5,12 +5,7 @@ int main()
 {
   int t;
   cin >> t;
-  while (t--)
-  {
-    int a, b;
-    cin>>a>>b;
-    cout<<(a/b)<<endl;
-  }
-
+  if(t%4==0){cout<<(t+1)<<endl;}
+  else{cout<<(t-1)<<endl;}
   return 0;
 }

@@ -7,10 +7,14 @@ int main()
   cin >> t;
   while (t--)
   {
-    int a, b;
+    int a,b;
     cin>>a>>b;
-    cout<<(a/b)<<endl;
+    if(a>b){cout<<">"<<endl;}
+    else if(a<b){cout<<"<"<<endl;}
+    else
+    {
+      cout<<"="<<endl;
+    }
   }
-
   return 0;
 }

@@ -8,9 +8,9 @@ int main()
   while (t--)
   {
     int a, b;
-    cin>>a>>b;
-    cout<<(a/b)<<endl;
+    cin >> a >> b;
+    if(a>b){cout<<a<<" "<<(a+b)<<endl;}
+    else{cout<<b<<" "<<(a+b)<<endl;}
   }
-
   return 0;
 }
