@@ -1,40 +1,30 @@
 #include <iostream>
 using namespace std;
 
-int isprime(long long int a)
-{
-  if (a == 1 || a == 2)
-  {
-    return 1;
+struct people{
+  string name;
+  int age;
+};
+
+void showdata(people data){
+    cout<<"Name : "<<data.name<<" age: "<<data.age;
   }
-  long long int i;
-  for (i = 2; i <= a / 2; ++i)
-  {
-    if (a % i == 0)
-    {
-      return 0;
-    }
-  }
-  if (i > a / 2)
-  {
-    return 1;
-  }
-  return 0;
+
+people adddata(people data,string name,int age){
+   data.name = name;
+   // cout<<data.name<<" ";
+   data.age = age;
+   return data;
 }
 
-int main()
-{
+int main(){
+ people ram;
+ ram.name = "ram";
+ ram.age = 13;
+ showdata(ram);
+ cout<<endl;
+ ram= adddata(ram,"Ram",12);
+ showdata(ram);
 
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    long long int n,i,p=1;
-    cin>>n;
-    for(i=n;i>0;i=n/p){
-      if(isprime(i)){cout<<i<<endl; break;}
-      p+=1;
-    }
-  }
   return 0;
 }
