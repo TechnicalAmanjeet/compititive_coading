@@ -96,12 +96,25 @@ int main()
 }
 
 void solution(){
-    ll Num,count=0; 
-    cin>>Num;
-    // cout<<Num<<" ";
-    while(Num>=5){
-        count+=(Num/5); 
-        Num/=5;
+    int n;
+    ll laddoo=0;
+    string nationality;
+    cin>>n>>nationality;
+    for(int i=0;i<n;++i){
+        string s;
+        cin>>s;
+        if(s=="CONTEST_WON"){
+            laddoo+=300;
+            int rank; cin>>rank;
+            if(rank<20) laddoo+=(20-rank);
+        }
+        else if(s=="TOP_CONTRIBUTOR") laddoo+=300;
+        else if(s=="BUG_FOUND"){
+            int bug; cin>>bug;
+            laddoo+=bug;
+        }
+        else if(s=="CONTEST_HOSTED") laddoo+=50;
     }
-    cout<<count<<endl;
+    if(nationality=="INDIAN") cout<<laddoo/200<<endl;
+    else if(nationality=="NON_INDIAN") cout<<laddoo/400<<endl;
 } 

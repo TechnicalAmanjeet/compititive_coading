@@ -1,4 +1,5 @@
-/*                          Technical Amanjeet ( youtube channel )
+/*                          
+              Technical Amanjeet ( youtube channel )
 
                          !!*******!                                             
                       !**************                                           
@@ -34,6 +35,8 @@
         Quote1: Practice like you've never won, Play like you've never lost.  
         Quote2: I will win no immediately , bt definetly.
 */  
+
+
 #include "bits/stdc++.h"
 using namespace std;
 
@@ -73,6 +76,9 @@ const int mod = 1e9+7;
 const long long inf = 1e18;
 const char nl = '\n';
 
+
+ // ****************** Function for taking input and output from file **********
+
 void CP()
 {
     #ifndef ONLINE_JUDGE
@@ -83,7 +89,10 @@ void CP()
 
 }
 
-void solution();                 
+// ****** INitialistion of solution funtion ***********
+void solution();      
+
+// *********** Program execution starts from here ************
 
 int main()
 {
@@ -95,13 +104,10 @@ int main()
     return 0;
 }
 
+// *********** Main section for writing code starts here ***************
+
 void solution(){
-    ll Num,count=0; 
-    cin>>Num;
-    // cout<<Num<<" ";
-    while(Num>=5){
-        count+=(Num/5); 
-        Num/=5;
-    }
-    cout<<count<<endl;
+    // ******** start writing code from here ***********
+
+    
 } 
